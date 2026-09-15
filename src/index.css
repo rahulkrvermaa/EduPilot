@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dark mode colors */
+  --color-dark-bg: #0B0F14;
+  --color-dark-surface: #111820;
+  --color-dark-surface-secondary: #17212B;
+  --color-dark-border: #263241;
+  --color-dark-text-primary: #F5F7FA;
+  --color-dark-text-secondary: #9CA8B7;
+  --color-dark-accent: #6366F1;
+  --color-dark-success: #22C55E;
+  --color-dark-warning: #F59E0B;
+  --color-dark-error: #EF4444;
+}
+
+@layer base {
+  :root {
+    --chart-grid: #e2e8f0;
+    --chart-axis: #64748b;
+    --chart-tooltip-border: #e2e8f0;
+    --chart-tooltip-bg: #ffffff;
+    --chart-tooltip-text: #0f172a;
+  }
+  .dark {
+    --background: #0B0F14;
+    --surface: #111820;
+    --surface-secondary: #17212B;
+    --border: #263241;
+    --text-primary: #F5F7FA;
+    --text-secondary: #9CA8B7;
+    --accent: #6366F1;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --error: #EF4444;
+    --chart-grid: #263241;
+    --chart-axis: #9CA8B7;
+    --chart-tooltip-border: #263241;
+    --chart-tooltip-bg: #111820;
+    --chart-tooltip-text: #F5F7FA;
+  }
+}
+
+@layer utilities {
+  .dark-bg {
+    background-color: #0B0F14;
+  }
+
+  .dark-surface {
+    background-color: #111820;
+  }
+
+  .dark-surface-secondary {
+    background-color: #17212B;
+  }
+
+  .dark-border {
+    border-color: #263241;
+  }
+
+  .dark-text-primary {
+    color: #F5F7FA;
+  }
+
+  .dark-text-secondary {
+    color: #9CA8B7;
+  }
+
+  .dark-accent {
+    color: #6366F1;
+  }
+
+  .dark-success {
+    color: #22C55E;
+  }
+
+  .dark-warning {
+    color: #F59E0B;
+  }
+
+  .dark-error {
+    color: #EF4444;
+  }
+}
